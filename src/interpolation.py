@@ -39,9 +39,10 @@ def plot_hermite(x, y):
 		ynew.append(i)	
 
 	plt.plot(xnew, ynew, '-')
+	#plt.plot(x, y, 'x')
 	plt.show()
 
-with open("./pontos3.txt", 'r') as lines:
+with open("../Points/usedpoints.txt", 'r') as lines:
 	points = [i.strip().split(",") for i in lines]	
 	x = [float(i[0]) for i in points]
 	y = [-1*float(i[1]) for i in points]
